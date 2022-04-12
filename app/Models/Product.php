@@ -14,8 +14,18 @@ class Product extends Model
         return $this->belongsTo(Category::class);
     }
     /// article has many comment when pernt is null
+    // public function orders()
+    // {
+    //     return $this->hasMany(Order::class);
+    // }
+    //      public function categories()
+    // {
+    //     return $this->belongsTo(Category::class);
+    // }
+    /// article has many comment when pernt is null
     public function orders()
     {
         return $this->hasMany(Order::class);
     }
+
 }
