@@ -3,11 +3,14 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Login') }}</div>
+        <div class="col-5">
+            <img src="public/img/s.jpg" style="width:600px;height:550px;margin-left:-120px;margin-top:-50px">
+        </div>
+        <div class="col-7">
+            <div class="card" style="margin-top: 80px;height:300px;width:500px; margin-left:20px;border-radius: 40px">
+                <div class="card-header bg-info" style="border-radius: 10px ">{{ __('Login') }}</div>
 
-                <div class="card-body">
+                <div class="card-body pt-4">
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
 
@@ -53,7 +56,7 @@
 
                         <div class="row mb-0">
                             <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn btn-info" style="border-radius: 10px">
                                     {{ __('Login') }}
                                 </button>
 
